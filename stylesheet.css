@@ -18,7 +18,9 @@ footer{
   grid-area:footer;
   background:rgba(0,0,0,2);
 }
-
+body{
+  background:linear-gradient(to right,lightgreen, teal);
+}
 }
 
 .container1{
