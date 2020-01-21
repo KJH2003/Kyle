@@ -62,3 +62,9 @@ header h3{
 main h2{
  color:navy; 
 }
+main p{
+  color:white;
+}
+footer p{
+  color:white;
+}
