@@ -51,4 +51,13 @@ nav a{
 }
 a:hover{
   color:white;
-}  
+}
+header h1{
+ mediumspringgreen;text-shadow:2px 2px 5px navy; 
+}
+header h3{
+  color:navy;
+}
+main h2{
+ color:navy; 
+}
