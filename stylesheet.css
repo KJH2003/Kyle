@@ -41,23 +41,28 @@ a:hover{
   color:white;
 }
 header h1{
-  color:mediumspringgreen;text-shadow:2px 2px 5px navy; 
+  color:mediumspringgreen;text-shadow:2px 2px 5px navy;
+  font-size:5vw;
 }
 header h3{
   color:navy;
   text-align:center;
+  font-size:2vw;
 }
 main h2{
  color:navy;
  text-align:center;
+ font-size:3em;
 }
 main p{
   color:white;
   text-align:center;
+  font-size:1em;
 }
 footer p{
   color:white;
   text-align:center;
+  font-size:1em;
 }
 
 .container1 {
