@@ -84,6 +84,32 @@ footer p {
   color:white;
   margin:0;
 }
+aside{
+  color:navy;
+  grid-area:aside;
+  background:rgba(0,0,0,.2);
+  padding:5px;
+}
+
+aside h2{
+  color:navy;
+  text-align:center;
+  padding:0 5px;
+}
+
+aside a{
+  color:white;
+  padding:10px 0;
+  margin:10px 0;
+}
+
+aside li{
+  padding:12px 0;
+}
+
+aside a:hover {
+  color:navy;
+}
 
 /*---------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
@@ -95,6 +121,7 @@ footer p {
     "header"
     "nav"
     "main"
+    "aside"
     "footer";
     }
 
@@ -132,6 +159,7 @@ footer p {
   grid-template-areas:
     "header header"
     "nav main"
+    "aside aside"
     "footer footer";
     }
 
@@ -158,12 +186,13 @@ footer p {
 @media only screen and (min-width: 960px)  {
 
 .container1 { /*for index.html*/
-  grid-template-columns:auto 1fr;
+  grid-template-columns:auto 1fr 25%;
   grid-template-areas:
-    "header header"
-    "nav main"
-    "footer footer";
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
     }
 	
 
 	}
+
