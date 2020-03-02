@@ -137,6 +137,40 @@ article h2{
 article p{
   color:white;
 }
+.nestedgrid{
+  display:grid;
+  grid-template-columns:auto;
+  grid-template-areas:
+  "section"
+  "fig1";
+}
+
+figure{
+  margin:0;
+  background:rgba(0,0,0,.2);
+}
+figcaption{
+  padding:5px;
+  color:navy;
+  font-weight:bold;
+}
+
+figure img{
+  padding-top:10px;
+}
+
+.fig1{
+  grid-area:fig1;
+  background:rgba(0,0,0,.2);
+  text-align:center;
+}
+
+.fig2{
+  grid-area:fig2;
+  background:rgba(0,0,0,.2);
+  text-align:center;
+}
+
 
 /*---------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
@@ -167,6 +201,18 @@ article p{
     "footer";
   }
 
+.container3 { /*for special.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "fig2"
+    "footer";
+  }
 
 /*This stuff is for the hamburger menu*/
 .toggleNav {
@@ -220,7 +266,17 @@ article p{
     "footer footer";
     }
 
-
+.container3 { /*for special.html*/
+  display: grid;
+  grid-template-columns:auto 1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "fig2 fig2"
+    "footer footer";
+  }
 /* Below will change from hamburger menu to side navigation*/
   
 .toggleNav {
@@ -242,6 +298,13 @@ article p{
 /*-----------------------Desktop Media Query------------------------*/
 @media only screen and (min-width: 960px)  {
 
+.nestedgrid{
+  display:grid;
+  grid-template-columns:auto;
+  grid-template-areas:
+  "section fig1";
+}
+
 .container1 { /*for index.html*/
   grid-template-columns:auto 1fr 25%;
   grid-template-areas:
@@ -262,6 +325,18 @@ article p{
   "nav main middle"
   "nav main bottom"
   "footer footer footer";
+  }
+
+.container3 { /*for special.html*/
+  display: grid;
+  grid-template-columns:auto 1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header "
+    "nav main "
+    "fig2 fig2 "
+    "footer footer";
   }
   
 	}
