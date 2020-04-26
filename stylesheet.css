@@ -200,10 +200,12 @@ form{
 
 .div1{
   grid-area:div1;
+  color:#000080;
 }
 
 .div2{
   grid-area:div2;
+  color:#000080;
 }
 
 .nestedgrid2{
