@@ -33,13 +33,13 @@
         <form class ="nestedgrid2" form action="https://formspree.io/maydeggd" method="POST">
           
             <div class="div1">
-            Name*<br> <input type="text" size="30" name="fullname" required spellcheck="false" autocomplete="off" aria-label="Name"><br>
-            Email*<br> <input type="email" size="30" name="email" required spellcheck="false" autocomplete="off" ><br>
-            Phone*<br><input type="tel" size="30" name="phone" required spellcheck="false" autocomplete="off" ><br>
-            Personal Website<br><input type="url" size="30" name="website" spellcheck="false" autocomplete="off" ><br>
+            Name*<br> <input type="text" size="30" name="fullname" required spellcheck="false" autocomplete="off" aria-label="Full Name"><br>
+            Email*<br> <input type="email" size="30" name="email" required spellcheck="false" autocomplete="off" aria-label="Email Address"><br>
+            Phone*<br><input type="tel" size="30" name="phone" required spellcheck="false" autocomplete="off" aria-label="Phone Number"><br>
+            Personal Website<br><input type="url" size="30" name="website" spellcheck="false" autocomplete="off" aria-label="Personal Website"><br>
             </div>
             <div class="div2">
-            Next Destination<br><input type="text" list="vacation"><br>
+            Next Destination<br><input type="text" list="vacation" aria-label="Locations"><br>
             <datalist id="vacation">
               <option value="Beijing">
               <option value="Lisbon">
@@ -48,8 +48,8 @@
               <option value="Tokyo">
               <option value="Washington D.C.">
             </datalist>
-            Expected Date of Departure<br><input type="date" name="dob"><br>
-            Number of Nights on Trip<br><input type="number" min="1" max="8" step="1" autocomplete="off" size="30" name="not"><br>
+            Expected Date of Departure<br><input type="date" name="dob" aria-label="Date of Departure"><br>
+            Number of Nights on Trip<br><input type="number" min="1" max="8" step="1" autocomplete="off" size="30" name="not" aria-label="Number of Nights"><br>
             <input type="submit" value="Help Me Book My Trip" class="button">
             </div>
         </form>
