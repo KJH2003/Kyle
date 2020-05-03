@@ -249,6 +249,15 @@ form{
   "div2";
   }
 
+.nestedgrid3 {
+  display: grid;
+  grid-gap:.5em;
+  justify-items:center;
+  align-items:end;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+
+
 .container1 { /*for index.html*/
   display: grid;
   grid-template-columns:100%;
